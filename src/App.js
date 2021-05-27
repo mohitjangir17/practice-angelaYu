@@ -3,14 +3,18 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
+import Form2 from "./components/Form2";
 import Time from "./components/Time";
+import Contact from "./components/Contact";
 function App() {
   const isLoggedIn = false;
   return (
     <div className="App">
       <Header />
       <Time />
-      {isLoggedIn === true ? <h1>Hello Mohit</h1> : <Form />}
+      {/* {isLoggedIn === true ? <h1>Hello Mohit</h1> : <Form />} */}
+      {/* <Form2 /> */}
+      <Contact />
       <Footer />
     </div>
   );

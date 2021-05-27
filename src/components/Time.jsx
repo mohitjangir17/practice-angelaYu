@@ -13,7 +13,8 @@ function Time() {
   };
   return (
     <div>
-      <h1>Time</h1>
+      {/* <h1>Time</h1> */}
+
       <h1>{time}</h1>
       <button onClick={updateTime}>Get Time</button>
     </div>
