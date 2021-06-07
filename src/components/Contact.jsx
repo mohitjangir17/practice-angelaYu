@@ -13,27 +13,10 @@ function Contact() {
     const { name, value } = e.target;
 
     setContact((prevValue) => {
-      if (name === "fname") {
-        return {
-          fname: value,
-          lname: prevValue.lname,
-          email: prevValue.email,
-        };
-      }
-      if (name === "lname") {
-        return {
-          fname: prevValue.fname,
-          lname: value,
-          email: prevValue.email,
-        };
-      }
-      if (name === "email") {
-        return {
-          fname: prevValue.fname,
-          lname: prevValue.lname,
-          email: value,
-        };
-      }
+      return {
+        ...prevValue,
+        [name]: value,
+      };
     });
   };
 
